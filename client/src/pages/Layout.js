@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
-import './Layout.css'
+import '../styles/Layout.css'
+import NavLink from '../components/NavLink'
 
 
 class Layout extends Component {
@@ -9,17 +9,11 @@ class Layout extends Component {
     	<div>
 	      <h1>Hello World!</h1>
 	      {this.props.children}
-	      <div class='tabs is-fullwidth'>
-		      <ul>
-		        <li>
-		          <Link to="/">Standings</Link>
-		        </li>
-		        <li>
-		          <Link to="/group">Group</Link>
-		        </li>
-		        <li>
-		          <Link to="/knockout">Knockout</Link>
-		        </li>
+	      <div className='tabs is-fullwidth'>
+		      <ul id='footer'>
+	          <NavLink to="/">Standings</NavLink>
+	          <NavLink to="/group">Group</NavLink>
+	          <NavLink to="/knockout">Knockout</NavLink>
 		      </ul>
 	      </div>
       </div>

@@ -1,0 +1,19 @@
+body {
+  max-width: 500px;
+  margin: auto; }
+
+#footer {
+  border-top: 1px #eeeeee solid;
+  position: fixed;
+  bottom: 0;
+  max-width: 500px;
+  width: 100%;
+  background: white; }
+  #footer .tabs a {
+    border-radius: 0 !important;
+    padding: 3px 0 0 0; }
+  #footer a:hover {
+    border-bottom: none; }
+  #footer li {
+    width: 20%;
+    font-weight: bold; }
